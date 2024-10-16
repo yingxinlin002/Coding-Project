@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # read csv file
-path = "C:\\Users\\yingx.DESKTOP-K7RP8AE\\Downloads\\linear-regression.train.csv"
+path = "C:\\...\\linear-regression.train.csv" #enter path of where the csv file is
 col_names = ['x', 'y']
 data = pd.read_csv(path, header=None, names=col_names)
 
