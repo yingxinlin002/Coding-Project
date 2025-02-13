@@ -35,5 +35,15 @@ def download_table_b():
         download_name='tableB.csv'
     )
 
+@app.route('/download_source_code')
+def download_source_code():
+    file_path = os.path.join(CSV_DATA_DIR, 'Homework1.py')
+    return send_file(
+        file_path, 
+        mimetype='text/x-python', 
+        as_attachment=True, 
+        download_name='source_code.py'
+    )
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
