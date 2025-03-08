@@ -1,0 +1,23 @@
+<!-- filepath: /c:/Users/yingx/OneDrive/Documents/Coding/BigData/templates/assignment3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 Report</title>
+</head>
+<body>
+    <a href="{{ url_for('index') }}">Back to Home</a><br>
+    <h1>Assignment 3 Report</h1>
+    <body>
+        <a href="https://github.com/yingxinlin002/Coding-Project/tree/main/BigData" target="_blank" title="https://github.com/yingxinlin002/Coding-Project/tree/main/BigData">
+            Download Source code on GitHub
+        </a> <br>
+        
+        <a href="{{ url_for('download_table_c') }}" download="tableC.csv">
+            Download table C
+        </a>
+    </body>
+    <iframe src="{{ url_for('static', filename='matching_explanation.pdf') }}" width="800" height="600"></iframe>
+</body>
+</html>
